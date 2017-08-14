@@ -20,7 +20,7 @@ public class TcpClient {
             //获取输出流向服务器发送信息
             OutputStream outputStream = socket.getOutputStream();
             PrintWriter printWriter = new PrintWriter(outputStream);
-            printWriter.write("用户名：admin；密码：123");
+            printWriter.write("大家好， 我是TCP Frank!");
             printWriter.flush();
             socket.shutdownOutput();
 
